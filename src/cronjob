@@ -1,0 +1,4 @@
+# cronjob
+
+# Run script every 15 minutes
+*/15 * * * * python /app/src/update_dns.py >> /var/log/cron.log 2>&1
