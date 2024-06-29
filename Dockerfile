@@ -17,6 +17,8 @@ RUN apt-get update && \
     apt-get -y install cron && \
     pip install --no-cache-dir requests python-dotenv
 
+CMD touch /var/log/cron.log
+
 # Give execution rights to the cron job
 RUN chmod 0644 src/cronjob
 
