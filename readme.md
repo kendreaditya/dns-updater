@@ -1,6 +1,6 @@
 # DNS Updater
 
-This project automates the updating of DNS records for your domain using Vercel's API. It runs a Python script periodically to check and update your DNS record with your current public IP address.
+This project automates the updating of DNS records for your domain using Cloudflare or Vercel's API. It runs a Python script periodically to check and update your DNS record with your current public IP address.
 
 ## Prerequisites
 

@@ -3,7 +3,7 @@ import unittest
 from time import sleep
 from dotenv import load_dotenv
 
-from update_dns import get_public_ip, get_current_record_ip, update_dns_record
+from vercel_update_dns import get_public_ip, get_current_record_ip, update_dns_record
 
 # Load environment variables
 load_dotenv()
