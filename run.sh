@@ -5,4 +5,5 @@ sudo docker build -t dns-updater .
 # sudo docker run --env-file .env dns-updater
 
 # Run the docker container (with persistance - even on reboot)
-sudo docker run -d --restart unless-stopped --env-file .env dns-updater
+sudo docker run -d -v /var/log/:/var/log/ --restart unless-stopped --env-file .env dns-updater
+
