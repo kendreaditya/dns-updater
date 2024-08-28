@@ -19,11 +19,14 @@ headers = {
     "Content-Type": "application/json"
 }
 
+log_file = '/var/log/dns_updater.log'
+
 # Configure logging
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(levelname)s - %(message)s',
     handlers=[
+        logging.FileHandler(log_file),
         logging.StreamHandler()  # This will log to stdout
     ]
 )
