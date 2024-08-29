@@ -1,5 +1,5 @@
 # cronjob
 
 # Run script every 15 minutes
-*/15 * * * * /bin/bash -l -c '/usr/local/bin/python /app/src/update_dns.py'
+*/15 * * * * /bin/bash -l -c '/usr/local/bin/python /app/src/cloudflare_update_dns.py'
 
